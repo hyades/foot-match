@@ -1,0 +1,22 @@
+<div class="page-header">
+    <h1>
+        Matches
+    </h1>
+</div>
+<table>
+    <tbody>
+        <tr ng-repeat="match in matches" >
+            <td class=" match-row">
+                <div class="col-md-12">
+                    <a href="/#/matches/[[match.match_id]]">
+                        <img class="thumbnail" src="/static/images/Football.jpg">
+                        <span class="col-md-6 thumbnail date-bar">[[match.match_time | date : "MMMM-d yyyy HH:mm"]]</span>
+                    </a>
+                    <a href="/#/matches/edit/[[match.match_id]]/">
+                        <span class="col-md-6 thumbnail date-bar">Edit</span>
+                    </a>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

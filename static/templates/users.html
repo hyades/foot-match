@@ -1,0 +1,12 @@
+<!-- [[user_data]] -->
+<div class="page-header">
+    <h2>[[user_data.user_name]]</h2>
+</div>
+
+<div>
+    <span>[[user_data.user_email]]</span>
+</div>
+
+<div class="col-md-6" ng-repeat="match in user_data.matches">
+    <a href="#/matches/[[match.match_id]]">[[match.match_time | date : "MMMM-d HH:mm"]]</a>
+</div>

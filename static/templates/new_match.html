@@ -1,0 +1,20 @@
+
+<form>
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Time of Match</label>
+        <input type="datetime-local" ng-model="match_time" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label class="col-sm-3 control-label">Who's In?</label>
+        <select multiple ng-options="user as user.user_name for user in users track by user.user_id" ng-model="match_users" class="form-control"></select>
+    </div>
+    <div class="form-control">
+        <label class="col-sm-3 control-label">Score</label>
+        <input type="text" ng-model="score">
+    </div>
+    <div class="form-control">
+        <button ng-click="submit()">Submit</button>
+    </div>
+
+</form>
